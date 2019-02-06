@@ -12,7 +12,7 @@ if (!function_exists('str_get_html')){
 	include_once('libs/simple-html-dom.php');
 }
 	
-/*
+/**
 ** Add textdomain to plugin
 */
 function smj_easy_auto_tags_textdomain() {
