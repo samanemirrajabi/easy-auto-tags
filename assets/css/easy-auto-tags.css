@@ -1,5 +1,11 @@
 .results-easy-auto-tags {
+    position:relative;
     clear:both;
+}
+.count_tags{
+    position: absolute;
+    left: 0;
+    top: -35px;
 }
 .list-easy-auto-tags{
     position:relative;
@@ -12,10 +18,13 @@
 .list-easy-auto-tags th:first-child{
     width:26%;
 }
-.list-easy-auto-tags th:last-child{
+.list-easy-auto-tags th{
     width:9%;
 }
-.list-easy-auto-tags td:nth-child(2),.list-easy-auto-tags td:nth-child(3){
+.list-easy-auto-tags td:first-child{
+    text-align: right;
+}
+.list-easy-auto-tags td{
     text-align: center;
 }
 .list-easy-auto-tags .dashicons-yes{

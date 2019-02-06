@@ -4,11 +4,10 @@ Donate link: http://wpmart.com/
 Tags: tag, tags, auto
 Requires at least: 4.7
 Tested up to: 4.9
-Stable tag: 1.1
+Stable tag: 1.2
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-
 
 Generate post tags from post title and content with Google. this plugin get help google.com to generate better tags for any type of content.
 
@@ -39,8 +38,12 @@ Upgrade
 
 == Changelog ==
 
+= 1.2 =
+* Add number of generated tags...
+
 = 1.1 =
 * Some enhancement and bug fixes
 
 = 1.0 =
 * Strat the project...
+

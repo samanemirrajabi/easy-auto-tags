@@ -5,7 +5,7 @@ Plugin URI: http://wpmart.com
 Author:  Samaneh Mirrajabi
 Author URI: http://pgacompany.com
 Description: Generate post tags from post title and content with Google
-Version: 1.1
+Version: 1.2
 */
 
 if (!function_exists('str_get_html')){
@@ -88,7 +88,7 @@ function smj_easy_auto_tags_function() {
 function smj_show_list_auto_tags($id,$list_true_tag){
     $result='';
     $term=  wp_get_post_terms($id, 'post_tag', array( 'fields' => 'names' ) ); 
-    $result .= '<table class="widefat fixed list-easy-auto-tags" data-nonce="'. wp_create_nonce('smj_table_ajax_nonce').'">
+    $result .= '<strong class="count_tags" >'. __('All Tags:', 'easy-auto-tags').sizeof($list_true_tag).'</strong><table class="widefat fixed list-easy-auto-tags" data-nonce="'. wp_create_nonce('smj_table_ajax_nonce').'">
                 <thead>
                     <tr>
                         <th><small>'.__('Tags', 'easy-auto-tags').'</small></th>
@@ -269,7 +269,7 @@ function smj_create_easy_auto_tags(){
 ?>
     <div class="title_auto_tags">
         <button type="button" name="generate_tags"  class="button-primary generate_tags " data-nonce="<?php echo wp_create_nonce('smj_ajax_nonce'); ?>" data-id="<?php echo  $post->ID ?>">Generate <span class="spinner"></span></button>
-        <!--strong ><?php _e('All Tags:', 'easy-auto-tags'); ?> <?php // $tags = wp_get_post_tags($post->ID); echo (count($tags)); ?></strong-->
+        
     </div>
     <div class="results-easy-auto-tags">
         <?php 
